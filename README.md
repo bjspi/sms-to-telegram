@@ -166,6 +166,8 @@ Key decisions and the reasoning behind them are documented in [`docs/ARCHITECTUR
 
 ### 2. Install & onboard
 
+Grab the latest signed APK from [**Releases**](https://github.com/bjspi/sms-to-telegram/releases) — or build it yourself:
+
 ```bash
 git clone https://github.com/bjspi/sms-to-telegram.git
 cd sms-to-telegram
@@ -200,7 +202,9 @@ For a dedicated relay device: grant the battery-optimization exemption during on
 
 **Stack:** Kotlin 2.0 · Jetpack Compose (Material 3) · Coroutines/Flow · Room · DataStore · WorkManager · OkHttp · kotlinx.serialization · Gradle version catalog
 
-The domain layer is pure Kotlin with no Android dependencies — use cases, retry policy, message formatting, and the Telegram error-classification table are covered by fast JVM tests against in-memory fakes and a mock HTTP server. CI builds and tests every push.
+The domain layer is pure Kotlin with no Android dependencies — use cases, retry policy, message formatting, and the Telegram error-classification table are covered by fast JVM tests against in-memory fakes and a mock HTTP server.
+
+CI builds and tests every push, produces a **signed, minified release APK** (keystore lives in GitHub secrets; builds without the secrets fall back to unsigned), and publishes the APK to a GitHub Release on every `v*` tag.
 
 ## License
 

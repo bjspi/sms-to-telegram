@@ -39,3 +39,8 @@ temp/
 Thumbs.db
 *.swp
 *.swo
+
+# Release signing (never commit)
+keystore/
+*.keystore
+*.jks

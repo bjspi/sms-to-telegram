@@ -6,6 +6,20 @@ plugins {
     alias(libs.plugins.ksp)
 }
 
+// Release signing is driven entirely by environment variables (CI decodes the
+// keystore from a secret). When they are absent — local builds, forks — the
+// release build type simply stays unsigned instead of failing.
+val signingKeystorePath: String? = System.getenv("SIGNING_KEYSTORE_PATH")
+val signingStorePassword: String? = System.getenv("SIGNING_STORE_PASSWORD")
+val signingKeyAlias: String? = System.getenv("SIGNING_KEY_ALIAS")
+val signingKeyPassword: String? = System.getenv("SIGNING_KEY_PASSWORD")
+val hasReleaseSigning = listOf(
+    signingKeystorePath,
+    signingStorePassword,
+    signingKeyAlias,
+    signingKeyPassword,
+).none(String?::isNullOrBlank)
+
 android {
     namespace = "io.github.bjspi.smsrelayer"
     compileSdk = 36
@@ -16,6 +30,17 @@ android {
         targetSdk = 36
         versionCode = 2
         versionName = "1.0.0"
+    }
+
+    if (hasReleaseSigning) {
+        signingConfigs {
+            create("release") {
+                storeFile = file(signingKeystorePath!!)
+                storePassword = signingStorePassword
+                keyAlias = signingKeyAlias
+                keyPassword = signingKeyPassword
+            }
+        }
     }
 
     buildTypes {
@@ -30,6 +55,9 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
             )
+            if (hasReleaseSigning) {
+                signingConfig = signingConfigs.getByName("release")
+            }
         }
     }
 
