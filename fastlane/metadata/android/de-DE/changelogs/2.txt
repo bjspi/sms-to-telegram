@@ -1,0 +1,1 @@
+Erste Version: SMS an beliebig viele Telegram-Chats weiterleiten, automatische Chat-ID-Erkennung, persistente Retry-Queue, selbstheilender Hintergrunddienst (ohne Root), Keystore-verschlüsselter Bot-Token, Diagnose-Screen, deutsche und englische Oberfläche.

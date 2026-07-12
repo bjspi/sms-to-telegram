@@ -1,0 +1,19 @@
+SMS Relayer macht aus jedem ausrangierten Android-Handy ein zuverlässiges SMS-zu-Telegram-Gateway. Jede eingehende SMS wird erfasst, gespeichert und sauber formatiert an einen oder mehrere Telegram-Chats weitergeleitet — über deinen eigenen Bot.
+
+Gebaut für den Klassiker „altes Handy in der Schublade": eine Test-SIM im Labor, eine alte Nummer, die noch wichtige Codes empfängt, oder Provider- und Monitoring-SMS, die im Team-Chat landen sollen.
+
+<b>Funktionen</b>
+
+• Jede SMS gleichzeitig an beliebig viele Einzelchats, Gruppen und Kanäle verteilen
+• Automatische Chat-ID-Erkennung: dem Bot einmal schreiben und den Chat aus der Liste wählen
+• Persistente Versandwarteschlange mit eskalierendem Retry — Nachrichten gehen nie stillschweigend verloren
+• Selbstheilender Betrieb: Vordergrunddienst, Watchdog und Boot-Receiver überstehen Prozess-Tod, Neustarts und App-Updates — ganz ohne Root
+• Bot-Token verschlüsselt im Android Keystore, aus allen Logs entfernt
+• Eingebaute Diagnose: Berechtigungen, Akku-Ausnahme, Netzwerk, Bot-Verbindung, Queue-Zustand
+• Durchsuchbares, filterbares, exportierbares Ereignisprotokoll
+• Geführte Einrichtung mit verpflichtendem End-to-End-Test
+• Deutsch und Englisch, inklusive der weitergeleiteten Nachrichten selbst
+
+<b>Privatsphäre</b>
+
+Keine Analytics, kein Cloud-Backend, keine Drittanbieterdienste. Die Daten fließen von deiner SIM in deinen Telegram-Chat — sonst nirgendwohin. Achtung: SMS-Inhalte können sensibel sein (2FA-Codes!), leite also nur an Telegram-Chats weiter, die du voll kontrollierst.

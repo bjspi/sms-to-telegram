@@ -1,0 +1,1 @@
+Initial release: relay incoming SMS to any number of Telegram chats with automatic chat-ID discovery, persistent retry queue, self-healing background service (no root), Keystore-encrypted bot token, diagnostics screen and English/German UI.
