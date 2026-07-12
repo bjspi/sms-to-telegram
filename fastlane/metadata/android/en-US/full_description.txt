@@ -1,6 +1,14 @@
 SMS Relayer turns any spare Android phone into a reliable SMS-to-Telegram gateway. Every incoming SMS is captured, persisted, and forwarded — cleanly formatted and HTML-escaped — to one or more Telegram chats via your own bot.
 
-Built for the "old phone in a drawer" use case: a test SIM in the lab, a legacy number that still receives important codes, or provider and monitoring SMS that should land in a team chat.
+<b>Why?</b>
+
+Most Android phones take two SIM cards. Drop one or two prepaid SIMs into a spare phone, leave it at home on a charger — and you own up to two phone numbers that are always online, with every SMS landing in your Telegram chats wherever you are:
+
+• 2FA from anywhere: codes sent to your home numbers show up in Telegram seconds later — log in to your services from anywhere, without carrying the SIM with you
+• Multiple accounts: many providers require a distinct phone number per account; cheap prepaid SIMs in a drawer phone solve that, and every verification SMS still reaches you (or your whole team via a group chat)
+• Numbers you can't retire: the legacy number your bank or an old account still texts keeps working — without an extra phone in your pocket
+
+Set it up once, then stop thinking about it: the relay runs unattended and heals itself.
 
 <b>Features</b>
 

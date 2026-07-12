@@ -1,6 +1,14 @@
 SMS Relayer macht aus jedem ausrangierten Android-Handy ein zuverlässiges SMS-zu-Telegram-Gateway. Jede eingehende SMS wird erfasst, gespeichert und sauber formatiert an einen oder mehrere Telegram-Chats weitergeleitet — über deinen eigenen Bot.
 
-Gebaut für den Klassiker „altes Handy in der Schublade": eine Test-SIM im Labor, eine alte Nummer, die noch wichtige Codes empfängt, oder Provider- und Monitoring-SMS, die im Team-Chat landen sollen.
+<b>Warum?</b>
+
+Die meisten Android-Handys haben Platz für zwei SIM-Karten. Steck ein oder zwei Prepaid-SIMs in ein altes Handy, lass es daheim am Ladekabel liegen — und du besitzt bis zu zwei Rufnummern, die immer online sind und deren SMS dich per Telegram überall erreichen:
+
+• 2FA von überall: Codes an deine Nummern daheim landen Sekunden später in Telegram — logge dich von unterwegs in deine Dienste ein, ohne die SIM dabeizuhaben
+• Mehrere Accounts: Viele Anbieter verlangen pro Account eine eigene Rufnummer; günstige Prepaid-SIMs im Schubladen-Handy lösen das — und jede Bestätigungs-SMS erreicht dich (oder dein ganzes Team per Gruppenchat) aus der Ferne
+• Nummern, die man nicht loswird: Die alte Nummer, an die Bank oder Uralt-Account noch SMS schicken, bleibt erreichbar — ohne Zweithandy in der Tasche
+
+Einmal einrichten, dann vergessen: Das Relay läuft unbeaufsichtigt und heilt sich selbst.
 
 <b>Funktionen</b>
 

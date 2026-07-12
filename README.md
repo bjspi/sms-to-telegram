@@ -21,6 +21,16 @@ SMS Relayer captures every incoming SMS on a dedicated Android device and forwar
 
 **No root required.** The app achieves 24/7 reliability purely with modern Android platform primitives: a `specialUse` foreground service, expedited WorkManager jobs, a persistent delivery queue, and a self-healing watchdog.
 
+## Why?
+
+Most Android phones take **two SIM cards**. Drop one or two prepaid SIMs into a spare phone, leave it at home on a charger — and you own up to two phone numbers that are *always online*, with every SMS landing in your Telegram chats wherever you are:
+
+- 📲 **2FA from anywhere.** Codes sent to your home numbers show up in Telegram seconds later. Log in to your services from the office, a hotel, another continent — without carrying the SIM with you.
+- 👥 **Multiple accounts, one drawer.** Many providers require a distinct phone number per account. Cheap prepaid SIMs in a drawer phone solve that — and every verification SMS still reaches you (or your whole team, via a group chat) remotely.
+- ☎️ **Numbers you can't retire.** The old number your bank, tax office, or that one ancient account still insists on texting keeps working — without keeping an extra phone in your pocket.
+
+Set it up once, then stop thinking about it: the relay runs unattended and heals itself.
+
 ## Features
 
 - 📩 **Capture & forward** — every incoming SMS is persisted first, then relayed to all enabled Telegram chats
