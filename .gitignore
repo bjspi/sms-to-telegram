@@ -1,0 +1,41 @@
+# Gradle
+.gradle/
+.gradle-user-home/
+.gradle-run-*/
+build/
+*/build/
+
+# Kotlin / Android build state
+.kotlin/
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Local machine configuration
+local.properties
+*.iml
+.idea/
+
+# Generated artifacts
+*.apk
+*.ap_
+*.aab
+*.aar
+*.dex
+*.class
+
+# Logs and temporary files
+*.log
+*.tmp
+.tmp/
+tmp/
+temp/
+
+# Backup exclusion markers
+.nobackup
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

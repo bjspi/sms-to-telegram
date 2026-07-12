@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS Relayer</string>
+
+    <!-- Common -->
+    <string name="action_back">Zurück</string>
+    <string name="action_next">Weiter</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_add">Hinzufügen</string>
+    <string name="action_test">Testen</string>
+    <string name="common_unknown">Unbekannt</string>
+    <string name="common_yes">Ja</string>
+    <string name="common_no">Nein</string>
+    <string name="time_never">Nie</string>
+    <string name="msg_action_failed">Aktion fehlgeschlagen. Details stehen in den Logs.</string>
+
+    <!-- Notification channels -->
+    <string name="channel_service_name">Relay-Dienst</string>
+    <string name="channel_service_description">Dauerhafte Benachrichtigung, solange das SMS-Relay läuft</string>
+    <string name="channel_delivery_name">Nachrichtenzustellung</string>
+    <string name="channel_delivery_description">Wird kurz angezeigt, während wartende SMS zugestellt werden</string>
+
+    <!-- Notifications -->
+    <string name="notification_service_title">SMS Relayer aktiv</string>
+    <string name="notification_service_text">Gerät: %1$s · Ziele: %2$d · Queue: %3$d</string>
+    <string name="notification_action_send_queue">Queue jetzt senden</string>
+    <string name="notification_delivery_title">Wartende SMS werden zugestellt…</string>
+    <string name="notification_device_placeholder">–</string>
+
+    <!-- Main tabs -->
+    <string name="tab_status">Status</string>
+    <string name="tab_logs">Logs</string>
+    <string name="tab_diagnostics">Diagnose</string>
+    <string name="tab_settings">Einstellungen</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">SMS Relayer einrichten</string>
+    <string name="onboarding_subtitle">Private SMS-zu-Telegram-Brücke</string>
+    <string name="step_welcome">Start</string>
+    <string name="step_device">Gerät</string>
+    <string name="step_bot">Bot</string>
+    <string name="step_targets">Ziele</string>
+    <string name="step_permissions">Rechte</string>
+    <string name="step_test">Test</string>
+    <string name="step_done">Fertig</string>
+
+    <string name="welcome_title">Willkommen</string>
+    <string name="welcome_body">Diese App leitet alle eingehenden SMS dieses Geräts an Telegram weiter. Sie läuft dauerhaft als Vordergrunddienst und startet nach einem Neustart automatisch wieder.</string>
+    <string name="welcome_start">Einrichtung starten</string>
+
+    <string name="device_title">Gerät benennen</string>
+    <string name="device_body">Gib diesem Smartphone einen eindeutigen Namen. Er erscheint in jeder Telegram-Nachricht.</string>
+    <string name="device_label">Gerätename</string>
+    <string name="device_hint">z. B. Relay-Handy 1</string>
+    <string name="device_error_length">Der Gerätename muss 2–40 Zeichen lang sein.</string>
+
+    <string name="bot_title">Telegram-Bot verbinden</string>
+    <string name="bot_body">Füge den Bot-Token ein, den du von @BotFather erhalten hast.</string>
+    <string name="bot_label">Bot-Token</string>
+    <string name="bot_show">Anzeigen</string>
+    <string name="bot_hide">Verbergen</string>
+    <string name="bot_check">Token prüfen</string>
+    <string name="bot_invalid_format">Das sieht nicht nach einem gültigen Bot-Token aus.</string>
+    <string name="bot_check_failed">Token abgelehnt oder Telegram nicht erreichbar.</string>
+    <string name="bot_connected">Verbunden: %1$s</string>
+    <string name="bot_check_first">Bitte prüfe zuerst den Bot-Token.</string>
+
+    <string name="targets_title">Telegram-Ziele hinzufügen</string>
+    <string name="targets_body">Füge eine oder mehrere Chat-IDs hinzu. Jede SMS wird an alle aktiven Ziele weitergeleitet.</string>
+    <string name="targets_discover">Chats automatisch finden</string>
+    <string name="targets_discovering">Suche läuft…</string>
+    <string name="targets_discover_hint">Schreibe deinem Bot zuerst eine Nachricht und starte dann die Suche.</string>
+    <string name="targets_discovered_none">Keine Chats gefunden. Schreibe dem Bot und versuche es erneut.</string>
+    <string name="targets_discovered_count">%1$d Chats gefunden</string>
+    <string name="targets_discover_failed">Chats konnten nicht geladen werden.</string>
+    <string name="targets_found_title">Gefundene Chats</string>
+    <string name="targets_use">Übernehmen</string>
+    <string name="target_name_label">Anzeigename</string>
+    <string name="target_chat_id_label">Chat-ID</string>
+    <string name="target_add">Chat hinzufügen</string>
+    <string name="target_exists">Diese Chat-ID existiert bereits.</string>
+    <string name="target_fields_required">Anzeigename und Chat-ID sind erforderlich.</string>
+    <string name="target_added">Chat hinzugefügt</string>
+    <string name="target_removed">Ziel entfernt</string>
+    <string name="target_enabled">Aktiv</string>
+    <string name="target_disabled">Inaktiv</string>
+    <string name="targets_need_one">Mindestens ein aktives Ziel ist erforderlich.</string>
+
+    <string name="permissions_title">Zugriff erlauben</string>
+    <string name="permissions_body">SMS Relayer benötigt SMS-Zugriff, Benachrichtigungen und uneingeschränkten Hintergrundbetrieb.</string>
+    <string name="permission_receive_sms">SMS empfangen</string>
+    <string name="permission_phone_state">Telefon-/SIM-Infos</string>
+    <string name="permission_notifications">Benachrichtigungen</string>
+    <string name="permission_battery">Akku-Optimierung ignorieren</string>
+    <string name="permission_state_granted">Erteilt</string>
+    <string name="permission_state_missing">Fehlt</string>
+    <string name="permission_state_optional">Optional</string>
+    <string name="permissions_request">Berechtigungen anfragen</string>
+    <string name="permissions_battery_open">Akku-Einstellungen</string>
+    <string name="permission_sms_required">Die SMS-Berechtigung ist erforderlich, um fortzufahren.</string>
+
+    <string name="test_title">Testnachricht senden</string>
+    <string name="test_body">Sende eine Testnachricht an alle aktiven Ziele, um die Einrichtung komplett zu prüfen.</string>
+    <string name="test_send_all">Test an alle senden</string>
+    <string name="test_success">Testnachricht zugestellt.</string>
+    <string name="test_failed">Test fehlgeschlagen. Prüfe Bot-Token und Chat-IDs.</string>
+    <string name="test_need_success">Mindestens ein erfolgreicher Test ist erforderlich.</string>
+    <string name="test_result_ok">Zugestellt</string>
+    <string name="test_result_failed">Fehlgeschlagen</string>
+    <string name="test_finish_setup">Einrichtung abschließen</string>
+
+    <string name="done_title">SMS Relayer ist aktiv</string>
+    <string name="done_body">Das Relay läuft jetzt dauerhaft und leitet jede eingehende SMS an Telegram weiter.</string>
+    <string name="done_finish">Zum Status</string>
+
+    <!-- Status screen -->
+    <string name="status_card_relay">Relay</string>
+    <string name="status_service_running">Dienst läuft</string>
+    <string name="status_service_stale">Heartbeat überfällig</string>
+    <string name="status_service_unknown">Dienststatus unbekannt</string>
+    <string name="status_bot_configured">Bot eingerichtet</string>
+    <string name="status_bot_missing">Bot-Token fehlt</string>
+    <string name="status_heartbeat">Letzter Heartbeat</string>
+    <string name="status_last_sms">Letzte SMS</string>
+    <string name="status_last_delivery">Letzte Zustellung</string>
+    <string name="status_send_test_all">Test an alle senden</string>
+    <string name="status_restart_service">Dienst neu starten</string>
+    <string name="status_card_device">Gerät</string>
+    <string name="status_device_name">Gerätename</string>
+    <string name="status_app_version">App-Version</string>
+    <string name="status_battery_exempt">Akku-Ausnahme</string>
+    <string name="status_card_targets">Telegram-Ziele</string>
+    <string name="status_targets_summary">%1$d aktiv von %2$d</string>
+    <string name="status_card_last_sms">Neueste SMS</string>
+    <string name="status_none_yet">Noch keine</string>
+    <string name="status_sms_from">Von</string>
+    <string name="status_sms_received">Empfangen</string>
+    <string name="status_card_queue">Versandwarteschlange</string>
+    <string name="queue_pending">Ausstehend</string>
+    <string name="queue_retryable">Wartet auf Wiederholung</string>
+    <string name="queue_sent">Zugestellt</string>
+    <string name="status_drain_queue">Queue jetzt senden</string>
+    <string name="status_msg_no_targets">Keine aktiven Ziele.</string>
+    <string name="status_msg_tests_sent">%1$d Testnachrichten zugestellt</string>
+    <string name="status_msg_drained">%1$d zugestellt, %2$d warten auf Wiederholung</string>
+    <string name="status_msg_service_restarted">Dienst neu gestartet</string>
+
+    <!-- Logs screen -->
+    <string name="logs_search_label">Suche</string>
+    <string name="logs_search_hint">Nachricht oder Details</string>
+    <string name="logs_filter_all">Alle</string>
+    <string name="logs_filter_error">Fehler</string>
+    <string name="logs_filter_warning">Warnung</string>
+    <string name="logs_filter_sms">SMS</string>
+    <string name="logs_filter_telegram">Telegram</string>
+    <string name="logs_filter_queue">Queue</string>
+    <string name="logs_filter_service">Dienst</string>
+    <string name="logs_empty">Noch keine Logeinträge</string>
+    <string name="logs_empty_filtered">Kein Eintrag passt zum Filter</string>
+    <string name="logs_export">Exportieren</string>
+    <string name="logs_delete">Logs löschen</string>
+    <string name="logs_delete_confirm_title">Alle Logs löschen?</string>
+    <string name="logs_delete_confirm_body">Dies kann nicht rückgängig gemacht werden.</string>
+    <string name="logs_no_details">Keine Details</string>
+    <string name="logs_export_subject">SMS-Relayer-Logs</string>
+    <string name="logs_export_chooser">Logs exportieren</string>
+
+    <!-- Diagnostics screen -->
+    <string name="diag_actions_title">Aktionen</string>
+    <string name="diag_refresh">Alle Checks ausführen</string>
+    <string name="diag_action_test_bot">Bot-Verbindung testen</string>
+    <string name="diag_action_test_all">Alle Ziele testen</string>
+    <string name="diag_action_drain">Queue senden</string>
+    <string name="diag_state_ok">OK</string>
+    <string name="diag_state_warning">Prüfen</string>
+    <string name="diag_state_failed">Fehlt</string>
+    <string name="diag_state_unknown">Unbekannt</string>
+    <string name="diag_check_permission_sms">SMS-Berechtigung</string>
+    <string name="diag_check_permission_phone">Telefonstatus-Berechtigung</string>
+    <string name="diag_check_notifications">Benachrichtigungen</string>
+    <string name="diag_check_battery">Akku-Ausnahme</string>
+    <string name="diag_check_service">Heartbeat des Vordergrunddienstes</string>
+    <string name="diag_check_channel">Benachrichtigungskanal</string>
+    <string name="diag_check_internet">Internetverbindung</string>
+    <string name="diag_check_bot_token">Bot-Token hinterlegt</string>
+    <string name="diag_check_targets">Aktive Ziele</string>
+    <string name="diag_check_queue">Versandwarteschlange</string>
+    <string name="diag_check_last_sms">Letzte empfangene SMS</string>
+    <string name="diag_check_last_delivery">Letzte erfolgreiche Zustellung</string>
+    <string name="diag_msg_bot_ok">Bot-Verbindung OK: %1$s</string>
+    <string name="diag_msg_bot_failed">Bot-Verbindung fehlgeschlagen.</string>
+
+    <!-- Telegram message content (appears in relayed chats, follows device locale) -->
+    <string name="tg_sms_header">Neue SMS</string>
+    <string name="tg_device_label">Gerät</string>
+    <string name="tg_time_label">Zeit</string>
+    <string name="tg_from_label">Von</string>
+    <string name="tg_to_sim_label">An/SIM</string>
+    <string name="tg_message_label">Nachricht</string>
+    <string name="tg_test_header">SMS Relayer Test</string>
+    <string name="tg_target_label">Ziel</string>
+    <string name="tg_test_body">Dies ist eine Testnachricht von SMS Relayer.</string>
+    <string name="tg_unavailable">nicht verfügbar</string>
+
+    <!-- Settings screen -->
+    <string name="settings_section_device">Gerät</string>
+    <string name="settings_device_saved">Gerätename gespeichert</string>
+    <string name="settings_section_bot">Telegram-Bot</string>
+    <string name="settings_bot_saved">Bot-Token gespeichert</string>
+    <string name="settings_section_targets">Chat-Ziele</string>
+    <string name="settings_no_targets">Noch keine Chat-Ziele.</string>
+    <string name="settings_target_saved">Ziel gespeichert</string>
+    <string name="settings_delete_target_title">Ziel löschen?</string>
+    <string name="settings_delete_target_body">„%1$s“ (%2$s) löschen?</string>
+    <string name="settings_section_service">Dienst</string>
+    <string name="settings_section_language">Sprache</string>
+    <string name="language_system">Systemstandard</string>
+    <string name="language_english">English</string>
+    <string name="language_german">Deutsch</string>
+    <string name="settings_section_preview">Nachrichten-Vorschau</string>
+    <string name="settings_preview_hint">So erscheinen Nachrichten in deinen Telegram-Chats.</string>
+    <string name="settings_preview_sms_title">Weitergeleitete SMS</string>
+    <string name="settings_preview_test_title">Testnachricht</string>
+    <string name="settings_test_ok">Test an %1$s zugestellt</string>
+    <string name="settings_test_failed">Test an %1$s fehlgeschlagen: %2$s</string>
+</resources>

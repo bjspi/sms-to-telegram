@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Thin bridge theme; all real styling lives in Compose (ui/theme).
+        AppCompat parent is required for per-app language support (AppCompatActivity).
+    -->
+    <style name="Theme.SmsRelayer" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
