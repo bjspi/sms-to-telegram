@@ -14,8 +14,8 @@ if not exist "%GRADLE_USER_HOME%" mkdir "%GRADLE_USER_HOME%" >nul 2>nul
 if not exist "%TEMP%" mkdir "%TEMP%" >nul 2>nul
 if not exist "%TMP%" mkdir "%TMP%" >nul 2>nul
 
-REM --- Build-/Temp-Verzeichnisse aus Backups ausschliessen ---
-call "%PROJ%mark-nobackup.bat"
+REM --- Build-/Temp-Verzeichnisse aus Backups ausschliessen (nur lokal vorhanden) ---
+if exist "%PROJ%mark-nobackup.bat" call "%PROJ%mark-nobackup.bat"
 
 REM --- local.properties sicherstellen ---
 call "%PROJ%setup-local-properties.bat"

@@ -44,3 +44,6 @@ Thumbs.db
 keystore/
 *.keystore
 *.jks
+
+# Machine-local helper (not part of the project)
+mark-nobackup.bat
