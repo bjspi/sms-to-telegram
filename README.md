@@ -7,6 +7,7 @@
 **Turn any spare Android phone into a reliable SMS-to-Telegram gateway.**
 
 [![CI](https://github.com/bjspi/sms-to-telegram/actions/workflows/android-ci.yml/badge.svg)](https://github.com/bjspi/sms-to-telegram/actions/workflows/android-ci.yml)
+[![Download APK](https://img.shields.io/github/v/release/bjspi/sms-to-telegram?label=Download%20APK&color=2ea44f)](https://github.com/bjspi/sms-to-telegram/releases/latest/download/app-release.apk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![API](https://img.shields.io/badge/API-26%2B-brightgreen)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?logo=kotlin&logoColor=white)
@@ -166,7 +167,7 @@ Key decisions and the reasoning behind them are documented in [`docs/ARCHITECTUR
 
 ### 2. Install & onboard
 
-Grab the latest signed APK from [**Releases**](https://github.com/bjspi/sms-to-telegram/releases) — or build it yourself:
+Grab the latest signed APK directly: [**⬇ app-release.apk**](https://github.com/bjspi/sms-to-telegram/releases/latest/download/app-release.apk) (all versions under [Releases](https://github.com/bjspi/sms-to-telegram/releases)) — or build it yourself:
 
 ```bash
 git clone https://github.com/bjspi/sms-to-telegram.git
