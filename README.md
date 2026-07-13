@@ -177,7 +177,11 @@ Key decisions and the reasoning behind them are documented in [`docs/ARCHITECTUR
 
 ### 2. Install & onboard
 
-Grab the latest signed APK directly: [**⬇ app-release.apk**](https://github.com/bjspi/sms-to-telegram/releases/latest/download/app-release.apk) (all versions under [Releases](https://github.com/bjspi/sms-to-telegram/releases)) — or build it yourself:
+Grab the latest signed APK directly: [**⬇ app-release.apk**](https://github.com/bjspi/sms-to-telegram/releases/latest/download/app-release.apk) (all versions under [Releases](https://github.com/bjspi/sms-to-telegram/releases)).
+
+For **automatic updates**, add this repo to [Obtainium](https://obtainium.imranr.dev/) — it installs and updates apps straight from GitHub releases: [**Add to Obtainium**](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/bjspi/sms-to-telegram) (or paste the repo URL into the app).
+
+Or build it yourself:
 
 ```bash
 git clone https://github.com/bjspi/sms-to-telegram.git
